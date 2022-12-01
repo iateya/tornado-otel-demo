@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "tornado-demo"
+version = "0.1.0"
+description = ""
+authors = ["Ibrahim Ateya <ibrahim.ateya@ansys.com>"]
+readme = "README.md"
+packages = [{include = "tornado_demo"}]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+aiohttp="^3.7.4"
+tornado="^6.0.4"
+uvloop="^0.14.0"
+pyyaml="^5.3.1"
+opentelemetry-instrumentation-logging = {version = "^0.33b0", allow-prereleases = true}
+opentelemetry-instrumentation-tornado = {version = "^0.33b0", allow-prereleases = true}
+opentelemetry-sdk = "^1.12.0"
+opentelemetry-exporter-otlp = "^1.12.0"
+python-json-logger = "^2.0.4"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
